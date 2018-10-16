@@ -1,14 +1,14 @@
-package myHelloWorld;
+package VIC;
  
 import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
-import myHelloWorld.HelloWorld;
+import VIC.VIC;
 
 /* This example does not use wsimport. Instead, it
 creates a service instance manually. */
  
-public class HelloWorldClient{
+public class VICClient{
  
 	public static void main(String[] args) throws Exception {
  

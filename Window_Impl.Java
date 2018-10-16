@@ -9,7 +9,7 @@ import javax.jws.WebService;
 public class Window_Impl implements VIC{
  
 	@Override
-	public String HelloWorld(String name) {
+	public String VIC(String name) {
 	Random rand = new Random();
 	int  n = rand.nextInt(4) + 1;
 

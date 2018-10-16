@@ -4,24 +4,38 @@ import java.util.Random;
 import javax.jws.WebService;
  
 //Service Implementation
-@WebService(endpointInterface = "VIC.HelloWorld")
-public class HelloWorldImpl implements HelloWorld{
+@WebService(endpointInterface = "VIC.Door")
+public class Door_Impl implements Door{
  
 	@Override
-	public String HelloWorld(String name) {
+	public String Door(String name) {
 	Random rand = new Random();
 	int  n = rand.nextInt(30) + 1;
 
-	if (n > 30)
+	if (name != "Door 1" || name != "Door 2")
 	{
-		System.out.println(name + " is locked")
+		System.out.println(name+" is not recognized.");
+		return "Sorry,  " + name + " is not recognized.";
 	}
-	
 
-
-
-		System.out.println(name+" says hello");
-		return "Hello World " + name;
+	if (n > 20)
+	{
+		
+		System.out.println("Returning " + name+" status");
+		return name + " is open.";
 	}
+	else if (n > 10)
+	{
+		
+		System.out.println("Returning " + name+" status");
+		return name + " is closed but not locked.";
+	}
+	else
+	{
+		
+		System.out.println("Returning " + name+" status");
+		return name + " is closed but not locked.";
+	}
+	}	
  
 }

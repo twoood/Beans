@@ -9,8 +9,8 @@ import javax.jws.soap.SOAPBinding.Style;
 @WebService
 @SOAPBinding(style = Style.RPC)
 
-public interface VeryImportant{
+public interface VIC{
  
-	@WebMethod String VeryImportant(String name);
+	@WebMethod String VIC(String name);
  
 }

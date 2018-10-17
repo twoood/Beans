@@ -7,7 +7,7 @@ import VIC.Window_Impl;
 public class Window_Publisher{
  
 	public static void main(String[] args) {
-	   Endpoint.publish("http://localhost:8080/window", new Window_Impl());
+	   Endpoint.publish("http://localhost:8090/window", new Window_Impl());
     }
  
 }

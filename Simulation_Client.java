@@ -3,8 +3,8 @@ package VIC;
 import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
-import VIC.Door;
-import VIC.Window;
+import VIC.*;
+
 
 /* This example does not use wsimport. Instead, it
 creates a service instance manually. */
@@ -27,16 +27,16 @@ public class Simulation_Client{
         System.out.println(response);
 
 
-    URL location_of_wsdl_1 = new URL("http://localhost:8080/window?wsdl");
+        URL location_of_wsdl_1 = new URL("http://localhost:8090/window?wsdl");
  
         QName name_of_service_1 = new QName("http://VIC/", "Window_ImplService");
  
         Service service1 = Service.create(location_of_wsdl_1, name_of_service_1);
  
-        Window window = service1.getPort(Window.class);
+        Window hello2 = service1.getPort(Window.class);
 
 
-	String response1 = window.Window(args[0]);
+	String response1 = hello2.Window(args[0]);
  
         System.out.println(response1);
  

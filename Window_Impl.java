@@ -13,7 +13,7 @@ public class Window_Impl implements Window{
 	int  n = rand.nextInt(4) + 1;
 	System.out.println(name);
 
-	if (name == 'Window 1' || name == 'Window 2' || name == 'Window 3') {
+	if (name.equals("Window 1") || name.equals("Window 2") || name.equals("Window 3")) {
 		//open, half open, closed, closed and locked
 		if (n == 1)
 		{
@@ -22,7 +22,7 @@ public class Window_Impl implements Window{
 		}
 		else if (n == 2)
 		{
-			System.out.println(name + " is half open.")
+			System.out.println(name + " is half open.");
 			return name + " is half open.";
 		}
 		else if (n == 3)
@@ -37,6 +37,18 @@ public class Window_Impl implements Window{
 		}
 
 	}
- 	
+	else 
+	{
+		if (name.contains("Door"))
+		{
+			System.out.println(" ");
+			return " ";
+		}
+		else
+		{
+		System.out.println(name+" is not recognized.");
+		return "Sorry,  " + name + " is not recognized.";
+		}
+	}
  	}
 }

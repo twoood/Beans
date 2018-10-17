@@ -2,6 +2,7 @@ package VIC;
 import java.util.Random;
 
 import javax.jws.WebService;
+import VIC.Door;
  
 //Service Implementation
 @WebService(endpointInterface = "VIC.Door")
@@ -37,8 +38,16 @@ public class Door_Impl implements Door{
 	}
 	else
 	{
-		System.out.println(name+" is not recognized.");
-		return "Sorry,  " + name + " is not recognized.";
+		if (name.contains("Window"))
+			{
+				System.out.println(" ");
+				return " ";
+			}
+		else
+			{	
+				System.out.println(name+" is not recognized.");
+				return "Sorry,  " + name + " is not recognized.";
+			}
 	}
 	}	
  

@@ -6,6 +6,7 @@ import VIC.Door_Impl;
 //Endpoint publisher
 public class Door_Publisher{
  
+ 	//door and window have individual endpoints
 	public static void main(String[] args) {
 	   Endpoint.publish("http://localhost:8080/door", new Door_Impl());
     }

@@ -9,10 +9,12 @@ import VIC.*;
 /* This example does not use wsimport. Instead, it
 creates a service instance manually. */
  
+//client that uses both implemented services to send information to servers/publishers
 public class Simulation_Client{
  
 	public static void main(String[] args) throws Exception {
  
+    //Door service
 	URL location_of_wsdl = new URL("http://localhost:8080/door?wsdl");
  
         QName name_of_service = new QName("http://VIC/", "Door_ImplService");
@@ -26,7 +28,10 @@ public class Simulation_Client{
  
         System.out.println(response);
 
+    // -------------------------------------------
 
+    // Window Service
+    
         URL location_of_wsdl_1 = new URL("http://localhost:8090/window?wsdl");
  
         QName name_of_service_1 = new QName("http://VIC/", "Window_ImplService");

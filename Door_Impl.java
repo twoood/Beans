@@ -11,9 +11,10 @@ public class Door_Impl implements Door{
 	@Override
 	public String Door(String name) {
 	Random rand = new Random();
-	int  n = rand.nextInt(30) + 1;
+	int  n = rand.nextInt(30) + 1; //randomize the responses
 	System.out.println(name);
 
+	//two valid door names
 	if (name.equals("Door 1")|| name.equals("Door 2"))
 	{
 

@@ -10,9 +10,10 @@ public class Window_Impl implements Window{
 	@Override
 	public String Window(String name) {
 	Random rand = new Random();
-	int  n = rand.nextInt(4) + 1;
+	int  n = rand.nextInt(4) + 1; //randomize the responses
 	System.out.println(name);
 
+	//three valid window names
 	if (name.equals("Window 1") || name.equals("Window 2") || name.equals("Window 3")) {
 		//open, half open, closed, closed and locked
 		if (n == 1)

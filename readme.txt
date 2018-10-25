@@ -33,7 +33,8 @@ Door_Impl.java
 
 IMPORTANT NOTE:
 --------------
-If running in linux lab, you must run the following commands from within the VIC directory:
+If running in linux lab, the bat files won't work,you must run the following commands from within the VIC directory:
+
 Door Server:
 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp ../ VIC.Door_Publisher
 

@@ -5,7 +5,7 @@ Due: 10/25/2018
 Written by:
 ------------
 Cailin Simpson
-Tom Woods
+Tom Wood
 
 Project Structure:
 ------------------------------------------

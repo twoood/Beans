@@ -1,0 +1,1 @@
+java -cp ../ VIC.Window_Publisher

@@ -1,0 +1,1 @@
+java -cp ../ VIC.Simulation_Client "Door 2"

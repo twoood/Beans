@@ -33,7 +33,22 @@ Door_Impl.java
 
 IMPORTANT NOTE:
 --------------
-If running in linux lab, the bat files won't work,you must run the following commands from within the VIC directory:
+If running in linux lab, the bat files won't work.
+
+The reason is the default version of Java in the lab is Java 10, not 8.
+For this reason, the client and servers can't run. 
+You have the option of either using the provided bash scripts.
+
+Door Server:
+./run_door.sh
+
+Window Server:
+./run_window.sh
+
+Client:
+./run_client.sh Door 2 <or whatever argument you want to pass>
+
+OR, you can run the commands manually.
 
 Door Server:
 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp ../ VIC.Door_Publisher
